@@ -22,7 +22,6 @@ To run this project locally, follow these steps:
 1. Clone the repository:
     ```bash
     $ git clone https://github.com/Android-X2/Moods.git
-    $ cd Moods
     ```
 2. npm init in both the server and client files to down load the node_modules
 
