@@ -41,7 +41,7 @@ To run this project locally, follow these steps:
 
 ## Contributing
 
-Contributions are welcome! To contribute to WeatherApp, follow these steps:
+Contributions are welcome! To contribute to Moods, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/awesome-feature`).
