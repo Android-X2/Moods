@@ -52,3 +52,12 @@ Contributions are welcome! To contribute to Moods, follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Quests To Do:
+
+This project is still in its MVP phase, so alot of revamping needs to be done. I've compiled a list of quests I still have to do.
+
+1. Overall UI design
+2. Responsive design for all forms of media
+3. Code Structure changes.
+    -It's very messy.
