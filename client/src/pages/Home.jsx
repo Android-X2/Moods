@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchYears = async () => {
-      const response = await fetch("/year", {
+      const response = await fetch("https://moods-backend.onrender.com/year", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${user.token}`,

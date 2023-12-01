@@ -1,4 +1,5 @@
 require('dotenv').config()
+const cors = require('cors');
 
 const express = require('express');
 // const session = require('express-session');
@@ -14,12 +15,8 @@ const moodRoutes = require('./routes/moodRoutes');
 const yearRoutes = require('./routes/yearRoutes');
 
 //middleware
-app.use(express.json())
-// figures out what shit is going on
-// app.use((req,res,next)=>{
-//   console.log(req.path, req.method)
-//   next()
-// })
+app.use(express.json());
+app.use(cors());
 
 //routes and paths
 app.use('/user', userRoutes);

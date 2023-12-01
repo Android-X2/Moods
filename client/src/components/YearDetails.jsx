@@ -22,7 +22,7 @@ const YearDetails = ({ year }) => {
 
   const handleDeleteYear = () => {
     const deleteYear = async () => {
-      const response = await fetch(`/year/${year.year}`, {
+      const response = await fetch(`https://moods-backend.onrender.com/year/${year.year}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${user.token}` },
       });
