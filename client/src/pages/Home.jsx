@@ -32,7 +32,7 @@ const Home = () => {
 
   const handleGetYear = (e) => {
     const fetchYear = async () => {
-      const response = await fetch(`/year/${e.target.value}`, {
+      const response = await fetch(`https://moods-backend.onrender.com/year/${e.target.value}`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${user.token}`,
@@ -48,7 +48,7 @@ const Home = () => {
 
   const handleCreateYear = () => {
     const createYear = async () => {
-      const response = await fetch("/year", {
+      const response = await fetch("https://moods-backend.onrender.com/year", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

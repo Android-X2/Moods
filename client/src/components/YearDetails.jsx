@@ -59,7 +59,6 @@ const YearDetails = ({ year }) => {
         week: x[1],
         day: x[0],
       };
-    console.log(currentMood, x);
     setIsEditing(true);
     setLocation(newLocation);
     setCurrentMood(newLocation.currentMood);
@@ -68,7 +67,7 @@ const YearDetails = ({ year }) => {
   const handleUpdateMood = () => {
     const newMood = { ...location, mood: mood };
     const updateMood = async () => {
-      const response = await fetch("/mood", {
+      const response = await fetch("https://moods-backend.onrender.com/mood", {
         method: "PATCH",
         body: JSON.stringify(newMood),
         headers: {

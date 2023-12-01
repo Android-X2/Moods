@@ -37,10 +37,9 @@ const EmotionDetail = ({ emotion }) => {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className=""
     >
       <div className={`${colorCode} text-black text-center`}>{emotion}</div>
-      {isHovered && emotionCode.map((x) => <div>{x}</div>)}
+      {isHovered && emotionCode.map((x) => <div key={x}>{x}</div>)}
     </div>
   );
 };
